@@ -1,0 +1,19 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div class="main-block">
+    <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Welcome to Kaibur</h1>
+    </div>
+    <tr th:each="result : ${result}">
+        <td th:text="${result.id}">1</td>
+        <td th:text="${result.name}">1</td>
+        <td th:text="${result.language}">1</td>
+        <td th:text="${result.framework}">1</td>
+    </tr>
+</div>
+</body>
+<html>
